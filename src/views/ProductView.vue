@@ -24,7 +24,7 @@ watch<string, true>(() => route.params.id as string, refetch, {
       <h1 class="x-title">
         {{ data.name }}
       </h1>
-      <div class="flex gap-8">
+      <div class="flex gap-4 max-md:flex-col">
         <img
           class="h-64 w-64 rounded object-cover"
           :src="data.thumbnailUrl"
