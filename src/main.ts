@@ -1,6 +1,6 @@
 import { createApp } from 'vue';
 import App from './App.vue';
-import { createWebHistory, createRouter } from 'vue-router';
+import { createWebHashHistory, createRouter } from 'vue-router';
 import { createPinia } from 'pinia';
 
 import CategoriesPage from './pages/CategoriesPage.vue';
@@ -17,7 +17,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory('/test-ecwid'),
+  history: createWebHashHistory('/test-ecwid'),
   routes,
 });
 
