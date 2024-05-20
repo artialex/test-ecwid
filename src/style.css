@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .x-container {
+    @apply container m-8 mx-auto px-4;
+  }
+
+  .x-title {
+    @apply mb-2 text-2xl;
+  }
+
+  .x-button {
+    @apply rounded bg-slate-400 px-3 py-1 text-white hover:bg-slate-500;
+  }
+
+  .x-description p {
+    @apply mb-2;
+  }
+
+  .x-product {
+    @apply mb-2 flex w-full items-center gap-4  pb-2 [&:not(:last-of-type)]:border-b;
+  }
+}
